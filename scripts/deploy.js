@@ -16,13 +16,8 @@ async function main() {
   let rec = await tx.wait()
   console.log("rec:", rec)
 
-  console.log("len:", (await lock.getLength()).toString())
-  console.log("x:", await lock.groups(0))
-  console.log("x:", await lock.groups(1))
-  console.log("x:", await lock.groups(2))
-  console.log("x:", await lock.groups(3))
-  console.log("x:", await lock.groups(4))
-  console.log("x:", await lock.groups(5))
+  console.log("A:", (await lock.getA()).toString())
+
 }
 
 // We recommend this pattern to be able to use async/await everywhere
